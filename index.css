@@ -1182,8 +1182,8 @@ svg{
     border-radius: 5px;
     box-shadow:  7px 7px 13px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    font-size: 16px;
-    margin-left: 20%;
+    font-size: 14px;
+    margin-left: 15%;
 }
 
 .whatsapp-btn:hover{
