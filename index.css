@@ -1,0 +1,2976 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: #4d4646;
+}
+
+::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+    border-radius: 20px;
+    width: 2px;
+}
+
+
+
+/* HERO SECTION */
+
+.hero{
+    height: 100vh;
+    background: 
+        linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("./Image/pic4.png"), left, 400px;
+    inset: 0;
+    background-size: cover;
+    background-position: 200% center;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-intro{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    width:40%;
+    text-align: center;
+    margin-left: auto;
+    font-family: "poppins", sans-serif;
+    gap: 10px;
+}
+
+.hero-intro-h1{
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: white;
+}
+
+#heroIntroPara::after{
+    content: "|";
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-intro-p{
+    font-size:1.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.color-chn{
+    color: rgb(139, 19, 19);
+}
+
+.hero-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    gap: 20%;
+    font-family: "Roboto mono", sans-serif;
+    
+    left: 10px;
+    right: 0;
+    
+}
+
+.links-wrap{
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));
+    width: 99%;
+    height: 65px;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 10px;
+    margin-left: 7px;
+    border-radius: 15px;
+}
+
+.hero-links a {
+    text-decoration: none;
+    font-size: 22px;
+    color: whitesmoke;
+    margin-top: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.hero-links a:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: rgb(139, 19, 19);
+    display: flex;
+    top: 40px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scaleX(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+} 
+
+.hero-links a:hover{
+    color: rgb(139, 19, 19);
+    font-weight: 700;
+}
+
+.hero-links a:hover::after{
+    color: pink;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.whatsapp-btn{
+    text-decoration: none;
+    color: white;
+    background: #000;
+    width: 170px;
+    font-family: "Roboto mono", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:  7px 7px 13px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.whatsapp-btn:hover{
+    transform: scale(1.1);
+}
+
+/* ABOUT SECTION */
+.about-section{
+    margin-top: 0;
+    background-color: aliceblue;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+}
+
+.about-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-sec-head{
+    padding-top: 4%;
+    margin-left: -3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-sec-head-h2{
+    font-family: "Roboto mono", sans-serif;
+    font-size: 35px;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.line {
+  width: 100px;
+  border-top: 6px dotted #c5c5c5;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #c5c5c5;
+  font-weight: bold;
+}
+
+.about-sec-p{
+    font-family: "poppins", sans-serif;
+    color: #636161;
+    text-align: center;
+    font-size: 22px;
+    line-height: 2.0;
+    font-weight: 500;
+    padding: 15px 30px;
+}
+
+/* SKILLS SECTION */
+.skills-section{
+    margin-top: 11%;
+    background-color: #fff;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills-sec-head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.skills-sec-head-h2{
+    font-family: "Roboto mono", sans-serif;
+    font-size: 35px;
+}
+
+.skills-sec-main{
+    display: flex;
+    width: 90%;
+    
+}
+
+/* SKILLS CIRCULAR PROGRESS BAR */
+
+.progress-bars{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    gap: 9%;
+    margin-top: 5%;
+    width: 90%;
+}
+
+/* HTMl PROGRESS BAR */
+.html-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+.html-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+.html-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.html-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#htmlNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.html-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.html-logo img{
+    width: 40px;
+}
+
+.html-p{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* CSS PROGRESS BAR */
+
+.css-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+.css-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+
+.css-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.css-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#cssNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.css-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.css-logo img{
+    width: 40px;
+}
+
+.css-p{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* JAVASCRIPT PROGRESS BAR */
+
+.js-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    width: 98%;
+    
+}
+
+.js-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+
+.js-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.js-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#jsNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.js-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.js-logo img{
+    width: 40px;
+}
+
+.js-p{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* GIT PROGRESS BAR */
+.git-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    
+}
+
+.git-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+    
+}
+
+.git-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.git-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#gitNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.git-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.git-logo img{
+    width: 40px;
+}
+
+.git-p{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* REACT PROGRESS BAR */
+.react-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    
+}
+
+.react-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+    
+}
+
+.react-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.react-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#reactNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.react-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.react-logo img{
+    width: 40px;
+}
+
+.react-p{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* GITHUB PROGRESS BAR */
+.github-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    
+}
+
+.github-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+    
+}
+
+.github-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.github-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#githubNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.github-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.github-logo img{
+    width: 40px;
+}
+
+.github-p{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+
+/* GENERAL SVG CODE */
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: stroke-dashoffset 2s linear forwards;
+   
+}
+
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* PROJECT SECTION */
+
+.project-section{
+    margin-top: 200px;
+    background-color: aliceblue;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-sec-head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.project-sec-head-h2{
+    font-family: "Roboto mono", sans-serif;
+    font-size: 35px;
+}
+
+/* PROJECT SECTION MAIN PAGE */
+.project-sec-main{
+    margin-top: 10px;
+    width: 95%;
+    overflow-x: auto;
+    margin: 3em auto;
+    padding: 10px;
+    display: flex;
+    gap: 2em;
+    scroll-behavior: smooth;
+    anchor-name: --project-sec-main;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+    border: none;
+}
+
+.project-cards {
+    display: inline-block;
+}
+
+.project-sec-main::scroll-marker-group{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+}
+
+.project-cards img::scroll-marker{
+    content: "";
+    height: 10px;
+    /* margin-top: 10px; */
+    width: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.project-cards img::scroll-marker:target-current{
+    background-color: black;
+}
+
+.project-sec-main::-webkit-scrollbar{
+    display: none;
+}
+
+.project-sec-main::scroll-button(right), .project-sec-main::scroll-button(left){
+    content: "→";
+    border: none;
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));
+    font-family: Consolas;
+    font-size: 3rem;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --project-sec-main;
+    position-area:right  bottom;
+    translate: -50%;
+    margin-top: 25px;
+}
+
+.project-sec-main::scroll-button(left) {
+    content: "←";
+    position-area: left bottom;
+    translate: 50%;
+}
+
+.project-sec-main::scroll-button(right):disabled, .project-sec-main::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+
+.project-cards img{
+    scroll-snap-align: start;
+    text-align: center;
+    align-content: center;
+    border: none;
+    flex: 0 0 20em;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-cards img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+}
+
+.contact-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.contact-top-h3{
+    text-align: center;
+    font-size: 90px;
+    font-family: "poppins", sans-serif;
+    
+}
+
+.contact-bottom{
+    height: 20vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    display: flex; 
+    justify-content: space-between;
+    padding: 40px;
+    font-family: "poppins", sans-serif;
+
+}
+
+.email-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+.email-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.email-dis{
+    font-size: 18px;
+}
+
+.email-lnk{
+    text-decoration: none;
+    color: grey;
+    font-style: oblique;
+    font-size: 19px;
+}
+
+.social-media-links{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos{
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s ease;
+}
+
+.logos:hover{
+    transform: scale(1.5);
+}
+
+.twitter-logo{
+    width: 22px;
+    height: 22px;
+}
+
+/* FOOTER */
+.footer{
+    margin-top: 40px;
+    background: 
+        linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    );
+    height: 10vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px 20px;
+    font-family: "poppins", sans-serif;
+}
+
+.copyright-div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider{
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: #666363; 
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.name-copyright, .year-copyright{
+    font-size: 18px;
+}
+
+.scroll-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-to-top{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.up-arrow{
+    width: 22px;
+    height: 20px;
+    text-align: center;
+}
+
+
+/* MOBILE SCREEN SIZE */
+@media only screen and (max-width: 600px) {
+
+/* HERO SECTION */
+
+.hero{
+    width: 100%;
+    height: 60vh;
+    background: 
+        linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("./Image/pic4.png");
+    inset: 0;
+    background-size: cover;
+    background-position: left, -120px;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-intro{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    width: 65%;
+    text-align: center;
+    margin-left: auto;
+    font-family: "poppins", sans-serif;
+    gap: 10px;
+}
+
+.hero-intro-h1{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    
+}
+
+#heroIntroPara::after{
+    content: "|";
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-intro-p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.color-chn{
+    color: rgb(139, 19, 19);
+}
+
+.hero-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    gap: 20%;
+    font-family: "Roboto mono", sans-serif;
+    
+    /* bottom: 40px; */
+    right: 0;
+    
+}
+
+.links-wrap{
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));
+    width: 95%;
+    height: 60px;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.hero-links a {
+    text-decoration: none;
+    font-size: 15.5px;
+    color: whitesmoke;
+    margin-top: -10px;
+    font-weight: 400;
+    position: relative;
+}
+
+.hero-links a:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: rgb(139, 19, 19);
+    display: flex;
+    top: 40px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scaleX(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+} 
+
+.hero-links a:hover{
+    color: rgb(139, 19, 19);
+    font-weight: 700;
+}
+
+.hero-links a:hover::after{
+    color: pink;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.whatsapp-btn{
+    text-decoration: none;
+    color: white;
+    background: #000;
+    width: 60%;
+    font-family: "Roboto mono", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-self: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:  7px 7px 13px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.whatsapp-btn:hover{
+    transform: scale(1.1);
+}
+
+
+/* ABOUT SECTION */
+.about-section{
+    margin-top: 0;
+    background-color: aliceblue;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+}
+
+.about-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-sec-head{
+    padding-top: 4%;
+    margin-left: -3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-sec-head-h2{
+    font-family: "Roboto mono", sans-serif;
+    font-size: 33px;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.line {
+  width: 90px;
+  border-top: 6px dotted #c5c5c5;
+}
+
+.icon {
+  font-size: 1.9rem;
+  color: #c5c5c5;
+  font-weight: bold;
+}
+
+.about-sec-p{
+    font-family: "poppins", sans-serif;
+    color: #636161;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2.0;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+}
+
+/* SKILLS SECTION */
+.skills-section{
+    margin-top: 60%;
+    background-color: #fff;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills-sec-head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.skills-sec-head-h2{
+    font-family: "Roboto mono", sans-serif;
+    font-size: 35px;
+}
+
+.skills-sec-main{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+/* SKILLS CIRCULAR PROGRESS BAR */
+
+.progress-bars{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    
+    gap: 2%;
+    margin-top: 10%;
+    width: 100%;
+    margin: 0;
+}
+
+/* HTMl PROGRESS BAR */
+.html-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    width: 98%;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+.html-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+.html-outer{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.html-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#htmlNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.html-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.html-logo img{
+    width: 40px;
+}
+
+.html-p{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* CSS PROGRESS BAR */
+
+.css-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    width: 98%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+.css-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+
+.css-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.css-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#cssNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.css-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.css-logo img{
+    width: 40px;
+}
+
+.css-p{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* JAVASCRIPT PROGRESS BAR */
+
+.js-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    width: 94%;
+    
+}
+
+.js-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+
+.js-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.js-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#jsNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.js-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.js-logo img{
+    width: 40px;
+}
+
+.js-p{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* GIT PROGRESS BAR */
+.git-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    width: 98%;
+    
+}
+
+.git-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+    
+}
+
+.git-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.git-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#gitNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.git-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.git-logo img{
+    width: 40px;
+}
+
+.git-p{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* REACT PROGRESS BAR */
+.react-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    width: 98%;
+    
+}
+
+.react-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+    
+}
+
+.react-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.react-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#reactNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.react-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.react-logo img{
+    width: 40px;
+}
+
+.react-p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* GITHUB PROGRESS BAR */
+.github-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    width: 98%;
+}
+
+.github-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+    
+}
+
+.github-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.github-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#githubNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.github-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.github-logo img{
+    width: 40px;
+}
+
+.github-p{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+
+
+/* PROJECT SECTION */
+
+.project-section{
+    margin-top: 50%;
+    background-color: aliceblue;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-sec-head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: -25%;
+}
+
+.project-sec-head-h2{
+    font-family: "Roboto mono", sans-serif;
+    font-size: 35px;
+}
+
+/* PROJECT SECTION MAIN PAGE */
+.project-sec-main{
+    margin-top: 10px;
+    width: 90%;
+    overflow-x: auto;
+    margin: 3em auto;
+    padding: 10px;
+    display: flex;
+    gap: 2em;
+    scroll-behavior: smooth;
+    anchor-name: --project-sec-main;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+    border: none;
+}
+
+.project-cards {
+    display: inline-block;
+}
+
+.project-sec-main::scroll-marker-group{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+}
+
+.project-cards img::scroll-marker{
+    content: "";
+    height: 10px;
+    /* margin-top: 10px; */
+    width: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.project-cards img::scroll-marker:target-current{
+    background-color: black;
+}
+
+.project-sec-main::-webkit-scrollbar{
+    display: none;
+}
+
+.project-sec-main::scroll-button(right), .project-sec-main::scroll-button(left){
+    content: "→";
+    border: none;
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));
+    font-family: Consolas;
+    font-size: 3rem;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --project-sec-main;
+    position-area:right  bottom;
+    translate: -50%;
+    margin-top: 25px;
+}
+
+.project-sec-main::scroll-button(left) {
+    content: "←";
+    position-area: left bottom;
+    translate: 50%;
+}
+
+.project-sec-main::scroll-button(right):disabled, .project-sec-main::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+
+.project-cards img{
+    scroll-snap-align: start;
+    text-align: center;
+    align-content: center;
+    border: none;
+    flex: 0 0 100%;
+    width: 90vw;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-cards img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+}
+
+.contact-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.contact-top-h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: "poppins", sans-serif;
+}
+
+.contact-bottom{
+    height: 45vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-family: "poppins", sans-serif;
+    gap: 10%;
+
+}
+
+.email-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+.email-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.email-dis{
+    font-size: 18px;
+}
+
+.email-lnk{
+    text-decoration: none;
+    color: grey;
+    font-style: oblique;
+    font-size: 19px;
+}
+
+.touch{
+    width: 50vw;
+    margin-left: -10px;
+}
+
+.social-media-links{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos{
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s ease;
+}
+
+.logos:hover{
+    transform: scale(1.5);
+}
+
+.twitter-logo{
+    width: 22px;
+    height: 22px;
+}
+
+
+}
+
+
+/*TABLET SIZE*/
+@media only screen and (min-width: 601px) and (max-width: 940px) {
+    /* HERO SECTION */
+
+.hero{
+    width: 100%;
+    height: 60vh;
+    background: 
+        linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("./Image/pic4.png");
+    inset: 0;
+    background-size: cover;
+    background-position: left, -120px;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-intro{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    width: 65%;
+    text-align: center;
+    margin-left: auto;
+    font-family: "poppins", sans-serif;
+    gap: 10px;
+}
+
+.hero-intro-h1{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    
+}
+
+#heroIntroPara::after{
+    content: "|";
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-intro-p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.color-chn{
+    color: rgb(139, 19, 19);
+}
+
+.hero-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    gap: 40%;
+    font-family: "Roboto mono", sans-serif;
+    
+    /* bottom: 40px; */
+    right: 0;
+    
+}
+
+.links-wrap{
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));
+    width: 95%;
+    height: 60px;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.hero-links a {
+    text-decoration: none;
+    font-size: 15.5px;
+    color: whitesmoke;
+    margin-top: -10px;
+    font-weight: 400;
+    position: relative;
+}
+
+.hero-links a:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: rgb(139, 19, 19);
+    display: flex;
+    top: 40px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scaleX(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+} 
+
+.hero-links a:hover{
+    color: rgb(139, 19, 19);
+    font-weight: 700;
+}
+
+.hero-links a:hover::after{
+    color: pink;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.whatsapp-btn{
+    text-decoration: none;
+    color: white;
+    background: #000;
+    width: 60%;
+    font-family: "Roboto mono", sans-serif;
+    text-align: center;
+    display: flex;
+    justify-self: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:  7px 7px 13px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.whatsapp-btn:hover{
+    transform: scale(1.1);
+}
+
+
+/* ABOUT SECTION */
+.about-section{
+    margin-top: 0;
+    background-color: aliceblue;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+}
+
+.about-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-sec-head{
+    padding-top: 4%;
+    margin-left: -3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-sec-head-h2{
+    font-family: "Roboto mono", sans-serif;
+    font-size: 33px;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.line {
+  width: 90px;
+  border-top: 6px dotted #c5c5c5;
+}
+
+.icon {
+  font-size: 1.9rem;
+  color: #c5c5c5;
+  font-weight: bold;
+}
+
+.about-sec-p{
+    font-family: "poppins", sans-serif;
+    color: #636161;
+    text-align: center;
+    font-size: 19px;
+    line-height: 2.0;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+}
+
+/* SKILLS SECTION */
+.skills-section{
+    margin-top: 43%;
+    background-color: #fff;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills-sec-head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.skills-sec-head-h2{
+    font-family: "Roboto mono", sans-serif;
+    font-size: 35px;
+}
+
+.skills-sec-main{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+/* SKILLS CIRCULAR PROGRESS BAR */
+
+.progress-bars{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    
+    gap: 2%;
+    margin-top: 10%;
+    width: 100%;
+    margin: 0;
+}
+
+/* HTMl PROGRESS BAR */
+.html-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    width: 98%;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+.html-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+.html-outer{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.html-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#htmlNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.html-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.html-logo img{
+    width: 40px;
+}
+
+.html-p{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* CSS PROGRESS BAR */
+
+.css-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    width: 98%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+.css-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+
+.css-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.css-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#cssNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.css-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.css-logo img{
+    width: 40px;
+}
+
+.css-p{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* JAVASCRIPT PROGRESS BAR */
+
+.js-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    width: 98%;
+    
+}
+
+.js-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+
+.js-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.js-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#jsNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.js-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.js-logo img{
+    width: 40px;
+}
+
+.js-p{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* GIT PROGRESS BAR */
+.git-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    width: 98%;
+    
+}
+
+.git-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+    
+}
+
+.git-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.git-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#gitNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.git-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.git-logo img{
+    width: 40px;
+}
+
+.git-p{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* REACT PROGRESS BAR */
+.react-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    width: 98%;
+    
+}
+
+.react-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+    
+}
+
+.react-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.react-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#reactNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.react-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.react-logo img{
+    width: 40px;
+}
+
+.react-p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+/* GITHUB PROGRESS BAR */
+.github-body-tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: aliceblue;
+    padding: 15px 45px;
+    padding-top: -10px;
+    height: 330px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border-radius: 10px;
+    width: 98%;
+    
+}
+
+.github-progress{
+    width: 160px;
+    height: 160px;
+    /* background: cornflowerblue; */
+    position: relative;
+    margin-top: 40px;
+    
+    
+}
+
+.github-outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px;
+}
+
+.github-inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,257,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+
+}
+
+#githubNumber{
+    font-weight: 600;
+    color: #555;
+    font-family: "Rubik", sans-serif;
+}
+
+.github-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.github-logo img{
+    width: 40px;
+}
+
+.github-p{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #D9DADB;
+    border: none;
+    text-shadow: 2px 2px 0px #e0e0e0, 4px 4px 0px #c0c0c0;
+}
+
+
+
+/* PROJECT SECTION */
+
+.project-section{
+    margin-top: 50%;
+    background-color: aliceblue;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-sec-head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: -7%;
+}
+
+.project-sec-head-h2{
+    font-family: "Roboto mono", sans-serif;
+    font-size: 35px;
+}
+
+/* PROJECT SECTION MAIN PAGE */
+.project-sec-main{
+    margin-top: 10px;
+    width: 95%;
+    overflow-x: auto;
+    margin: 3em auto;
+    padding: 10px;
+    display: flex;
+    gap: 2em;
+    scroll-behavior: smooth;
+    anchor-name: --project-sec-main;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+    border: none;
+}
+
+.project-cards {
+    display: inline-block;
+}
+
+.project-sec-main::scroll-marker-group{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+}
+
+.project-cards img::scroll-marker{
+    content: "";
+    height: 10px;
+    /* margin-top: 10px; */
+    width: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.project-cards img::scroll-marker:target-current{
+    background-color: black;
+}
+
+.project-sec-main::-webkit-scrollbar{
+    display: none;
+}
+
+.project-sec-main::scroll-button(right), .project-sec-main::scroll-button(left){
+    content: "→";
+    border: none;
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));
+    font-family: Consolas;
+    font-size: 3rem;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --project-sec-main;
+    position-area:right  bottom;
+    translate: -50%;
+    margin-top: 25px;
+}
+
+.project-sec-main::scroll-button(left) {
+    content: "←";
+    position-area: left bottom;
+    translate: 50%;
+}
+
+.project-sec-main::scroll-button(right):disabled, .project-sec-main::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+
+.project-cards img{
+    scroll-snap-align: start;
+    text-align: center;
+    align-content: center;
+    border: none;
+    flex: 0 0 100%;
+    width: 50vw;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-cards img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+}
+
+.contact-section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.contact-top-h3{
+    text-align: center;
+    font-size: 50px;                  
+    font-family: "poppins", sans-serif;
+}
+
+.contact-bottom{
+    height: 45vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-family: "poppins", sans-serif;
+    gap: 10%;
+
+}
+
+.email-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+.email-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.email-dis{
+    font-size: 18px;
+}
+
+.email-lnk{
+    text-decoration: none;
+    color: grey;
+    font-style: oblique;
+    font-size: 19px;
+}
+
+.touch{
+    width: 50vw;
+    margin-left: -10px;
+}
+
+.social-media-links{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos{
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s ease;
+}
+
+.logos:hover{
+    transform: scale(1.5);
+}
+
+.twitter-logo{
+    width: 22px;
+    height: 22px;
+}
+}
+
+
+
+
