@@ -1173,12 +1173,12 @@ svg{
     text-decoration: none;
     color: white;
     background: #000;
-    width: 65%;
+    width: 50%;
     font-family: "Roboto mono", sans-serif;
     text-align: center;
     display: flex;
     justify-self: flex-start;
-    padding: 10px 10px;
+    padding: 9px 8px;
     border-radius: 5px;
     box-shadow:  7px 7px 13px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
