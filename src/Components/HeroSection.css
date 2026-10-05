@@ -226,7 +226,7 @@
         flex-direction: column;
         padding: 0;
         background-color: aliceblue;
-        height: 85vh;
+        height: 90vh;
     }
 
     .hero-image {
@@ -282,5 +282,16 @@
         color: #0d0d0d;
         margin: 0 auto;
         
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .hero-section{
+        height: 70vh;
+    }
+
+    .hero-image{
+        right: 70px;
     }
 }

@@ -85,3 +85,19 @@
         justify-content: center;
     }
 }
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .skill-head-h2{
+        font-size: 20px;
+    }
+
+    .skill-head-p{
+        font-size: 17px;
+        opacity: 0.3;
+    }
+
+    .skill-main{
+        gap: 30px;
+    }
+}

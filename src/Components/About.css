@@ -155,3 +155,14 @@
         order: 3;
     }
 }
+
+/* Very small phones */
+@media (max-width: 360px){
+    .abt-hd{
+        opacity: 0.5;
+    }
+
+    .about-pic{
+        width: 220px;
+    }
+}
