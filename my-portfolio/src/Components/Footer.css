@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geist+Pixel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Yuyu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geist+Pixel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Yuyu&display=swap');
+
+
+
+.footer-div {
+    height: 90vh;
+    margin-top: 20px;
+    background-color: #0d0d0d;
+    /* border-top-left-radius: 40px;
+    border-top-right-radius: 40px; */
+    padding: 30px 20px;
+}
+
+.footer-head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+.footer-head-h2 {
+    font-size: 80px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    width: 50%;
+    line-height: 1.0;
+    color: grey;
+}
+
+.together {
+    font-size: 150px;
+}
+
+.footer-write-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-head-p {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: italic;
+    color: grey;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 17px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    transition: transform 0.6s ease;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: grey;
+    transform: scale(1.1);
+}
+
+.copyright-and-socials {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-right-div {
+    display: flex;
+    gap: 16px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.copy-name {
+    border-right: 1.5px solid grey;
+    padding-right: 15px;
+    height: 17px;
+    color: rgb(107, 106, 106);
+    font-weight: 700;
+}
+
+.copy-year {
+    border-right: 1.5px solid grey;
+    padding-right: 15px;
+    height: 17px;
+    font-size: 16px;
+    color: grey;
+}
+
+.copy-email {
+    color: grey;
+    text-decoration: none;
+}
+
+.copy-email:hover {
+    cursor: pointer;
+    color: rgb(194, 193, 193);
+}
+
+.socials-div {
+    display: flex;
+    gap: 30px;
+}
+
+.socials-div a {
+    font-size: 18px;
+}
+
+.socials-links {
+    display: flex;
+    color: grey;
+    transition: transform 0.3s ease;
+}
+
+.socials-links:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+/* Medium/tablet */
+@media (max-width: 1300px) {
+    .footer-div{
+        height: auto;
+    }
+}
+
+/* NORMAL TABLET */
+@media (max-width: 850px) {
+    .footer-div {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+
+    }
+
+    .footer-head-h2 {
+        font-size: 40px;
+    }
+
+    .together {
+        font-size: 80px;
+    }
+
+    .footer-write-div {
+        display: flex;
+        gap: 40px;
+    }
+
+    .footer-head-p {
+        font-size: 20px;
+    }
+
+
+    .contact-btn {
+        text-align: center;
+        padding: 9px 25px;
+        font-size: 18px;
+
+    }
+
+    .copyright-and-socials {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .socials-div {
+        display: flex;
+        order: 1;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .copy-right-div {
+        display: flex;
+        order: 2;
+        margin-top: 40px;
+    }
+
+    .copy-right-div {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .copy-name {
+        border: none;
+        font-size: 18px;
+    }
+
+    .copy-year {
+        border: none;
+        font-size: 18px;
+    }
+
+    .copy-email {
+        font-size: 13px;
+        display: none;
+    }
+}
+
+/* NORMAL PHONES */
+@media (max-width: 560px) {
+    .footer-div {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+
+    }
+
+    .footer-head-h2 {
+        font-size: 35px;
+    }
+
+    .together {
+        font-size: 55px;
+    }
+
+    .footer-write-div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-head-p {
+        font-size: 18px;
+    }
+
+    .contact-btn {
+        text-align: center;
+        padding: 15px 25px;
+        font-size: 20px;
+    }
+
+    .copyright-and-socials {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .socials-div {
+        display: flex;
+        order: 1;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .copy-right-div {
+        display: flex;
+        order: 2;
+        margin-top: 40px;
+    }
+
+    .copy-right-div {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .copy-name {
+        border: none;
+        font-size: 18px;
+    }
+
+    .copy-year {
+        border: none;
+        font-size: 18px;
+    }
+
+    .copy-email {
+        font-size: 13px;
+        display: none;
+    }
+}

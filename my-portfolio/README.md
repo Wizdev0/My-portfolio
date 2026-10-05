@@ -4,19 +4,18 @@ Welcome to my personal portfolio website. This project showcases my skills, proj
 
 ## Live Demo
 
-**Website:** https://my-portfolio-two-blond-65.vercel.app/
+**Website:** 
 
 ## Preview
 
-![](./Image/Screenshots/Portfolio-ss.png)
+![](./src/assets/Image/Screenshots/Portfolio-ss-2.png)
 
 ---
 
 ## Built With
 
-- HTML5
+- REACT JS
 - CSS3
-- JavaScript (Vanilla)
 
 ---
 

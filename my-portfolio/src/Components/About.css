@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geist+Pixel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Yuyu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geist+Pixel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Yuyu&display=swap');
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.about-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.abt-hd {
+    font-style: italic;
+    font-family: "Space Grotesk", sans-serif;
+    color: grey;
+    font-weight: 400;
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+.about-writeup {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    padding: 10px 50px;
+}
+
+.abt-wrt-1 {
+    color: grey;
+    width: 400px;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #0d0d0d;
+    font-weight: 600;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-pic {
+    background-color: rgb(65, 61, 61);
+    border-radius: 12px;
+    width: 250px;
+    transform: rotateY(-15deg) rotateX(10deg);
+}
+
+
+.abt-wrt-2 {
+    color: grey;
+    width: 400px;
+    line-height: 1.5;
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+
+/* TABLET SIZE */
+@media (max-width: 850px) {
+    .about-section{
+        padding: 2px 10px;
+    }
+    
+    .about-writeup{
+        padding: 5px 15px;
+        gap: 30px;
+    }
+}
+
+/* NORMAL PHONES */
+@media (max-width: 560px) {
+    .about-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 2px 15px;
+    }
+
+    .about-header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .abt-hd {
+        font-style: italic;
+        font-family: "Space Grotesk", sans-serif;
+        color: grey;
+        font-weight: 400;
+        font-size: 17px;
+        opacity: 0.8;
+    }
+
+    .about-writeup {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: "Inter", sans-serif;
+        font-style: italic;
+        padding: 5px 15px;
+        
+    }
+
+    .abt-wrt-1 {
+        color: grey;
+        width: 100%;
+        line-height: 1.5;
+        order: 2;
+        margin-top: 10px;
+        
+    }
+
+    .highlight {
+        color: #0d0d0d;
+        font-weight: 600;
+    }
+
+    .about-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+    }
+
+    .about-pic {
+        background-color: rgb(65, 61, 61);
+        border-radius: 12px;
+        width: 250px;
+        transform: rotateY(-15deg) rotateX(10deg);
+    }
+
+
+    .abt-wrt-2 {
+        color: grey;
+        width: 100%;
+        line-height: 1.5;
+        display: flex;
+        justify-self: flex-end;
+        align-self: flex-end;
+        margin-top: 10px;
+        order: 3;
+    }
+}
