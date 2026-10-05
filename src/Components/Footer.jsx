@@ -26,7 +26,7 @@ export function Footer() {
 
                     <a
                         className='contact-btn'
-                        href='https://wa.me/2348062749407?text=Hello%20I,%20need%20your%20service..." target="_blank'
+                        href='https://wa.me/2348062749407?text=Hello%20I,%20need%20your%20service...'
                     >
                         Contact me  →
                     </a>
