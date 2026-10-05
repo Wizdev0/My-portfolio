@@ -288,7 +288,7 @@
 /* Very small phones */
 @media (max-width: 360px) {
     .hero-section{
-        height: 70vh;
+        min-height: 100%;
     }
 
     .hero-image{
