@@ -6,7 +6,9 @@ import { Skill } from '../Components/Skill';
 import { Projects } from '../Components/Projects';
 import { Footer } from '../Components/Footer';
 
-export function HomePage( { darkMode, setDarkMode } ) {
+export function HomePage() {
+
+    
     return (
         <>
             <div className="header-comp">
