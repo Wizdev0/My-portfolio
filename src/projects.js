@@ -6,7 +6,7 @@ import BlogrWeb from './assets/Image/Screenshots/Blogr-ss.png';
 import NavWeb from './assets/Image/Screenshots/Nav-ss.png';
 import SunnySide from './assets/Image/Screenshots/sunnyside-ss.png';
 import SignupWeb from './assets/Image/Screenshots/SignUp.png';
-import Socialmedia from './assets/image/Screenshots/Social-media-ss.png';
+import Socialmedia from './assets/Image/Screenshots/Social-media-ss.png';
 import NewsPage from './assets/Image/Screenshots/News-page-ss.png';
 import WeatherWeb from './assets/Image/Screenshots/weather-ss.png';
 import SolarEdge from './assets/Image/Screenshots/solar-ss.png';
