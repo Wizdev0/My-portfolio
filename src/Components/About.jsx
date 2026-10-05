@@ -1,5 +1,5 @@
 import './About.css';
-import AboutPicture from '../assets/Image/pic-5.png'
+import AboutPicture from '../assets/Image/pic-5.webp'
 import { motion } from "motion/react"
 
 export function About(){

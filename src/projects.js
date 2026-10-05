@@ -1,15 +1,15 @@
-import TypingTest from './assets/Image/Screenshots/Typing-test-ss.png';
-import DigitalBank from './assets/Image/Screenshots/Digital-bnk-ss.png';
-import AgeCalculator from './assets/Image/Screenshots/Age-calculator-ss.png';
-import BasselWeb from './assets/Image/Screenshots/Bassel-ss.png';
-import BlogrWeb from './assets/Image/Screenshots/Blogr-ss.png';
-import NavWeb from './assets/Image/Screenshots/Nav-ss.png';
-import SunnySide from './assets/Image/Screenshots/sunnyside-ss.png';
-import SignupWeb from './assets/Image/Screenshots/SignUp.png';
-import Socialmedia from './assets/Image/Screenshots/Social-media-ss.png';
-import NewsPage from './assets/Image/Screenshots/News-page-ss.png';
-import WeatherWeb from './assets/Image/Screenshots/weather-ss.png';
-import SolarEdge from './assets/Image/Screenshots/solar-ss.png';
+import TypingTest from './assets/Image/Screenshots/Typing-test-ss.webp';
+import DigitalBank from './assets/Image/Screenshots/Digital-bnk-ss.webp';
+import AgeCalculator from './assets/Image/Screenshots/Age-calculator-ss.webp';
+import BasselWeb from './assets/Image/Screenshots/Bassel-ss.webp';
+import BlogrWeb from './assets/Image/Screenshots/Blogr-ss.webp';
+import NavWeb from './assets/Image/Screenshots/Nav-ss.webp';
+import SunnySide from './assets/Image/Screenshots/sunnyside-ss.webp';
+import SignupWeb from './assets/Image/Screenshots/SignUp.webp';
+import Socialmedia from './assets/Image/Screenshots/Social-media-ss.webp';
+import NewsPage from './assets/Image/Screenshots/News-page-ss.webp';
+import WeatherWeb from './assets/Image/Screenshots/weather-ss.webp';
+import SolarEdge from './assets/Image/Screenshots/solar-ss.webp';
 
 export const projects = [
     {

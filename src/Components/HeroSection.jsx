@@ -1,5 +1,5 @@
 import './HeroSection.css';
-import HeroPicture from '../assets/Image/pic4-3-bw.png';
+import HeroPicture from '../assets/Image/pic4-3-bw.webp';
 
 
 export function HeroSection() {
